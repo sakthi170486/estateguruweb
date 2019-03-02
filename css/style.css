@@ -1,0 +1,180 @@
+body{font: normal 14px/24px "Roboto", sans-serif;
+letter-spacing: 1px;}
+.mainheader .topheader {
+    padding: 15px 0;
+    background-color: #fff;
+    z-index: 1000;
+    position: relative;
+
+}
+.contact-info {
+    line-height: normal;
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+}
+.contact-holder {
+    float: right;
+}
+#header{min-height:122px;}
+select{	
+    line-height: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    color: #999;   
+    box-shadow: none;
+}
+select.currency-field {
+    width: 70px;
+    height: 18px;
+	    margin-right: 30px;
+}
+.currency-field{
+	background-color: transparent;
+    border: 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+}
+.contact-holder {
+    margin-top: 3px;
+}
+.field-holder {
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.contact-info small {
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    margin: 0 0 2px;
+    color: #a8a8a8;
+}
+.mainheader .login-area {
+    float: right;
+    padding: 12px 0;
+}
+.mainheader .social-media {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 -12px;
+    padding: 0;
+    vertical-align: middle;
+}
+.mainheader .social-media li {
+    line-height: normal;
+    line-height: 14px;
+    display: inline-block;
+    margin: 0 0 0 12px;
+    list-style: none;
+    vertical-align: middle;
+}
+.mainheader .social-media li a {
+    color: #fff;
+    background: none;
+}
+.mainheader .social-media ~ .login-option {
+    position: relative;
+    margin: 0 0 0 18px;
+    padding-left: 18px;
+    line-height: 18px;
+	color: #ffffff !important;
+}
+.mainheader .social-media ~ .login-option:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    margin: auto;
+    content: '';
+    background-color: rgba(255,255,255,.2);
+}
+.mainheader .login-option > a {
+    vertical-align: middle;
+}
+.mainheader .login-option a {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+.mainheader .login-option > a + span {
+    vertical-align: middle;
+}
+.mainheader .social-media li a:hover{    color: #d64521 !important;}
+
+
+
+
+
+.contact-info span {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-info ~ .header-add-property {
+    display: inline-block;
+    margin: 0 0 0 35px;
+}
+.property-btn {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    padding: 10px 15px;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d64521;
+    border: 1px solid #d64521;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #5a2e8a;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  
+  
+  font: normal 700 12px/19px "Raleway", sans-serif !important;
+text-transform: uppercase !important;
+}
+.top-banner{background: url(../images/home-bg.jpg)no-repeat center / cover;    padding-top: 120px;
+    padding-bottom: 285px;
+   }
+.nav-area{    background-color: #5a2e8a;}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
