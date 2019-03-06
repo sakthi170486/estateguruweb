@@ -1382,7 +1382,7 @@ color: transparent;
 
 .login-form .check-box-remind label:before { position: absolute; top: 3px; left: 0; width: 14px; height: 14px; content: ''; border: 1px solid #e6e6e6; }
 
-.login-form .check-box-remind input[type='checkbox']:checked + label:after { font-family: 'icomoon'; font-size: 10px; line-height: 18px; position: absolute; top: 1px; left: 2px; content: '\e5ca'; cursor: pointer; }
+.login-form .check-box-remind input[type='checkbox']:checked + label:after { font-family: 'fontawesome'; font-size: 10px; line-height: 18px; position: absolute; top: 1px; left: 2px; content: '\f00c'; cursor: pointer; }
 
 .login-form form textarea { font-size: 12px; color: #a3a7ab; border: 1px solid #ccc; border-radius: 5px; }
 
@@ -2414,7 +2414,7 @@ li.gal-img.ui-sortable-placeholder, li.ui-sortable-placeholder { visibility: vis
 
 .user-holder .payment-holder .checkbox-area label { font-weight: 700; position: relative; padding-left: 20px; cursor: pointer; text-transform: capitalize; }
 
-.payment-holder .checkbox-area input[type='checkbox']:checked + label:after { font-family: 'icomoon'; font-size: 10px; font-weight: 700; position: absolute; top: 1px; left: 1px; content: '\e5ca'; color: #999; border-radius: 0; }
+.payment-holder .checkbox-area input[type='checkbox']:checked + label:after { font-family: 'fontawesome'; font-size: 10px; font-weight: 700; position: absolute; top: 1px; left: 1px; content: '\f00c'; color: #999; border-radius: 0; }
 
 .payment-holder .checkbox-area label:before { font-weight: normal; position: absolute; top: 0; left: 0; width: 13px; height: 13px; content: ''; border: 1px solid #dfdfdf; border-radius: 3px; }
 
@@ -4080,7 +4080,7 @@ body .ui-tooltip { padding: 6px 15px; line-height: 18px; color: #000; border-rad
 
 .user-property .user-list ul.panel-group li .panel .panel-heading .img-holder .sold-property-box label:before { position: absolute; top: 3px; left: 0; width: 14px; height: 14px; content: ''; border: 1px solid #e6e6e6; font-size: 10px; line-height: 14px; }
 
-.user-property .user-list ul.panel-group li .panel .panel-heading .img-holder .sold-property-box input[type="checkbox"]:checked + label:before { font-family: 'icomoon'; line-height: 18px; position: absolute; content: '\e5ca'; cursor: pointer; }
+.user-property .user-list ul.panel-group li .panel .panel-heading .img-holder .sold-property-box input[type="checkbox"]:checked + label:before { font-family: 'fontawesome'; line-height: 18px; position: absolute; content: '\f00c'; cursor: pointer; }
 
 /*Dashboard Sold Property Box Style End*/
 
@@ -4190,7 +4190,7 @@ ul.sub-nav li.active .btn-edit-profile, ul.sub-nav li.active a { color: #d64521;
 
 .progressbar-nav li.active.processing:before { font-family: inherit; line-height: 24px; width: 26px; height: 26px; margin: -1px auto 16px auto; content: counter(step); counter-increment: step; color: #fff; border: solid 1px #417d41; background-image: -webkit-linear-gradient(bottom, #29a105, #3bb417); background-image: -moz-linear-gradient(bottom, #29a105, #3bb417); background-image: -o-linear-gradient(bottom, #29a105, #3bb417); background-image: -ms-linear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(0, 0, 0, .15); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(0, 0, 0, .15); box-shadow: 0 0 5px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(0, 0, 0, .15); }
 
-.progressbar-nav li.active:before { font-family: 'icomoon'; line-height: 16px; width: 22px; height: 22px; content: '\e5ca'; color: #fff; border: solid 3px #ccc; background-color: #29a105; background-image: -webkit-linear-gradient(bottom, #29a105, #3bb417); background-image: -moz-linear-gradient(bottom, #29a105, #3bb417); background-image: -o-linear-gradient(bottom, #29a105, #3bb417); background-image: -ms-linear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.progressbar-nav li.active:before { font-family: 'fontawesome'; line-height: 16px; width: 22px; height: 22px; content: '\f00c'; color: #fff; border: solid 3px #ccc; background-color: #29a105; background-image: -webkit-linear-gradient(bottom, #29a105, #3bb417); background-image: -moz-linear-gradient(bottom, #29a105, #3bb417); background-image: -o-linear-gradient(bottom, #29a105, #3bb417); background-image: -ms-linear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 .progressbar-nav li.active:after { border-color: #29a105; }
 
@@ -4200,7 +4200,7 @@ ul.sub-nav li.active .btn-edit-profile, ul.sub-nav li.active a { color: #d64521;
 
 .progressbar-nav li.cond-restaurant-settings:before { content: ''; }
 
-.progressbar-nav li.cond-restaurant-settings.active:before { content: '\e5ca'; }
+.progressbar-nav li.cond-restaurant-settings.active:before { content: '\f00c'; }
 
 .progressbar-nav li.active.processing.cond-restaurant-settings:before { font-family: 'icomoon'; content: '\e969'; }
 
@@ -6259,7 +6259,7 @@ a.property-list-enquiry-check .enquiry-loader { position: absolute; left: 0; top
 
 .main-search .chosen-container-single .chosen-single div b { position: relative; background: none; }
 
-.main-search .chosen-container-single .chosen-single div b:before { font-family: 'icomoon'; font-size: 22px; font-weight: 400; position: absolute; top: 0; left: -10px; content: '\e313'; color: #919191; }
+.main-search .chosen-container-single .chosen-single div b:before { font-family: 'fontawesome'; font-size: 22px; font-weight: 400; position: absolute; top: 0; /* left: -10px; */ content: '\f107'; color: #919191; }
 
 .main-search .chosen-container-single .chosen-single div { top: 0; }
 
@@ -6405,7 +6405,7 @@ color: #555;
 
 .main-search .search-advanced-fields .search-features-list .checkbox label { margin: 0; background-color: transparent; }
 
-.main-search .search-advanced-fields .search-features-list .checkbox label:hover:before { font-family: 'icomoon'; font-size: 14px; line-height: 16px; position: absolute; top: 0; left: 0; content: '\e5ca'; color: #666; }
+.main-search .search-advanced-fields .search-features-list .checkbox label:hover:before { font-family: 'fontawesome'; font-size: 14px; line-height: 16px; position: absolute; top: 0; left: 0; content: '\f00c'; color: #666; }
 
 .main-search .search-advanced-fields .search-features-list .radio, .main-search .search-advanced-fields .search-features-list .checkbox { margin: 0; }
 
@@ -6513,7 +6513,8 @@ color: #555;
 
 .main-search .nav-tabs li.active a { background: none; }
 
-.main-search .tab-content { padding: 15px 20px 25px; background-color: #5a2e8a; }
+.main-search .tab-content { padding: 15px 20px 25px; background-color: #5a2e8a;position: absolute;
+    z-index: 9999; }
 
 .main-search .search-popup-holder { display: inline-block; width: 100%; }
 
@@ -7817,7 +7818,7 @@ flex: 1;
 
 .wp-rem-filters .cs-parent-checkbox-list .checkbox label:hover { color: #000 !important; text-decoration: underline; }
 
-.wp-rem-filters .cs-parent-checkbox-list .checkbox label:before { content: "\f00c"; border: 0; font-size: 16px; font-family: 'FONTAWESOME' !important; speak: none; font-style: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; top: 1px; }
+.wp-rem-filters .cs-parent-checkbox-list .checkbox label:before { content: "\f00c"; border: 0; font-size: 16px; font-family: 'fontawesome' !important; speak: none; font-style: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; top: 1px; }
 
 .wp-rem-filters .cs-parent-checkbox-list strong { margin-top: 12px; display: block; }
 
@@ -7889,7 +7890,7 @@ flex: 1;
 
 .price-per-person .slider-handle:before { position: absolute; bottom: -9px; left: 0; width: 0; height: 0; content: ''; border-top: 9px solid #d64521; border-right: 9px solid transparent; border-left: 9px solid transparent; }
 
-.price-per-person .slider-handle:after { font-family: 'icomoon' !important; font-size: 14px; line-height: 0; position: absolute; top: 50%; left: 50%; margin-top: 2px; content: '\e97f'; color: #fff; }
+/* .price-per-person .slider-handle:after { font-family: 'fontawesome' !important; font-size: 14px; line-height: 0; position: absolute; top: 50%; left: 50%; margin-top: 2px; content: '\e97f'; color: #fff; } */
 
 /*Filter Accordion Style*/
 

@@ -1,85 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Estate Guru</title>
-    <link type="text/css" media="all" href="css/style.css" rel="stylesheet" />
-    <link type="text/css" media="all" href="css/bootstrap.css" rel="stylesheet" />
-    <link type="text/css" media="all" href="css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" id="swiper-css" href="css/swiper.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/property.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/bootstrap-slider.css" type="text/css" media="all">
-	<link rel="stylesheet" id="chosen-css" href="css/chosen.css" type="text/css" media="all">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-slider.js"></script>
-	<script type="text/javascript" src="js/chosen.select.js"></script>
- <script type="text/javascript" src="js/chosen-ajaxify.js"></script>
-</head>
-
-<body>
-    <header id="header">
-        <div class="mainheader">
-            <div class="topheader">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-3 col-sm-6" id="logo"> <img class="img-responsive" src="images/logo.png"></div>
-                        <div class="col-12 col-md-9 col-sm-12">
-                            <div class="contact-holder header-contact-holder">
-                                <select name="" class="currency-field">
-                                    <option value="USD ($)">USD ($)</option>
-                                    <option value="USD (£)">Pound ($)</option>
-                                    <option value="USD (€)">Euro ($)</option>
-                                </select> <span class="contact-info"> <small>Call for Enquiry</small> <span>202-555-0182</span></span>
-                                <div class="header-add-property input-button-loader"> <a href="#" class="property-btn">Create Property</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-area sticky-header" id="tmenu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-sm-8">
-                            <div id="navbar">
-                                <nav class="navbar navbar-expand-md navbar-dark">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
-                                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item"> <a class="nav-link" href="#">Home</a></li>
-                                            <li class="nav-item"> <a class="nav-link" href="#">About Us</a></li>
-                                            <li class="nav-item"> <a class="nav-link" href="#">Property</a></li>
-                                            <li class="nav-item"> <a class="nav-link" href="#">Membership</a></li>
-                                            <li class="nav-item"> <a class="nav-link" href="#">Blog</a></li>
-                                            <li class="nav-item"> <a class="nav-link" href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-sm-4">
-                            <div class="login-area">
-                                <ul class="social-media">
-                                    <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-google"></i></a></li>
-                                    <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-vimeo"></i></a></li>
-                                    <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                </ul>
-                                <div class="login-option"> <i class="fa fa-user"></i> <a id="btn-header-main-login" data-target="#sign-in" data-toggle="modal" class="" href="/#user-login-tab-49388">Sign in</a> <span>/</span> <a class="cs-color cs-popup-joinus-btn login-popup-btn wp-rem-open-register-button user-tab-register" data-target="#sign-in" data-toggle="modal" href="/#user-register-49388">Register</a></div>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php include 'header.php';?>
     <div class="main-content">
         <div class="top-banner">
             <div class="container ">
@@ -182,12 +101,12 @@
 								<div class="field-holder select-dropdown property-type checkbox"> 
 									<ul>
 										<li>
-											<input type="radio" checked="checked" onchange="" id="search_form_property_type1" name="property_type" value="for-sale">
-											<label for="search_form_property_type1">For Sale</label>
+											<input type="radio" checked="checked" onchange="" id="adv_sale" name="adv_property_type" value="for-sale">
+											<label for="adv_sale">For Sale</label>
 										</li>
 										<li>
-											<input type="radio" onchange="" id="search_form_property_type2" name="property_type" value="to-rent">                                
-											<label for="search_form_property_type2">To Rent</label>
+											<input type="radio" onchange="" id="adv_rent" name="adv_property_type" value="to-rent">                                
+											<label for="adv_rent">To Rent</label>
 										</li>
 									</ul> 
 								</div>
@@ -217,7 +136,7 @@
 								</div>
 								
 								<div class="search-advanced-fields">
-									<div class="field-holder select-dropdown price-type">
+									<div class="field-holder select-dropdown price-type rent col-12 col-md-4 col-sm-4">
 										<div class="select-categories">
 											<ul>
 												<li>
@@ -230,24 +149,26 @@
 											</ul>
 										</div>
 									</div>
-									<div class="field-holder select-dropdown">
-                        <div class="wp-rem-min-max-price">
-                            <div class="select-categories"> 
-                                <ul>
-                                    <li>
-                                        <select onchange="wp_rem_property_content('5869');" class="chosen-select-no-single" name="price_minimum" style="display: none;"><option selected="selected" value="">Min Price</option><option value="10000">10000</option><option value="30000">30000</option><option value="50000">50000</option><option value="70000">70000</option><option value="90000">90000</option><option value="110000">110000</option><option value="130000">130000</option><option value="150000">150000</option><option value="170000">170000</option><option value="190000">190000</option><option value="210000">210000</option><option value="230000">230000</option><option value="250000">250000</option><option value="270000">270000</option><option value="290000">290000</option><option value="310000">310000</option><option value="330000">330000</option><option value="350000">350000</option><option value="370000">370000</option><option value="390000">390000</option><option value="410000">410000</option><option value="430000">430000</option><option value="450000">450000</option><option value="470000">470000</option><option value="490000">490000</option><option value="510000">510000</option><option value="530000">530000</option><option value="550000">550000</option><option value="570000">570000</option><option value="590000">590000</option><option value="610000">610000</option><option value="630000">630000</option><option value="650000">650000</option><option value="670000">670000</option><option value="690000">690000</option><option value="710000">710000</option><option value="730000">730000</option><option value="750000">750000</option><option value="770000">770000</option><option value="790000">790000</option><option value="810000">810000</option><option value="830000">830000</option><option value="850000">850000</option><option value="870000">870000</option><option value="890000">890000</option><option value="910000">910000</option><option value="930000">930000</option><option value="950000">950000</option><option value="970000">970000</option><option value="990000">990000</option></select><div class="chosen-container chosen-container-single chosen-container-active chosen-with-drop" style="width: 100%;" title=""><a class="chosen-single" tabindex="-1"><span>Min Price</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected highlighted" data-option-array-index="0" style="">Min Price</li><li class="active-result" data-option-array-index="1" style="">10000</li><li class="active-result" data-option-array-index="2" style="">30000</li><li class="active-result" data-option-array-index="3" style="">50000</li><li class="active-result" data-option-array-index="4" style="">70000</li><li class="active-result" data-option-array-index="5" style="">90000</li><li class="active-result" data-option-array-index="6" style="">110000</li><li class="active-result" data-option-array-index="7" style="">130000</li><li class="active-result" data-option-array-index="8" style="">150000</li><li class="active-result" data-option-array-index="9" style="">170000</li><li class="active-result" data-option-array-index="10" style="">190000</li><li class="active-result" data-option-array-index="11" style="">210000</li><li class="active-result" data-option-array-index="12" style="">230000</li><li class="active-result" data-option-array-index="13" style="">250000</li><li class="active-result" data-option-array-index="14" style="">270000</li><li class="active-result" data-option-array-index="15" style="">290000</li><li class="active-result" data-option-array-index="16" style="">310000</li><li class="active-result" data-option-array-index="17" style="">330000</li><li class="active-result" data-option-array-index="18" style="">350000</li><li class="active-result" data-option-array-index="19" style="">370000</li><li class="active-result" data-option-array-index="20" style="">390000</li><li class="active-result" data-option-array-index="21" style="">410000</li><li class="active-result" data-option-array-index="22" style="">430000</li><li class="active-result" data-option-array-index="23" style="">450000</li><li class="active-result" data-option-array-index="24" style="">470000</li><li class="active-result" data-option-array-index="25" style="">490000</li><li class="active-result" data-option-array-index="26" style="">510000</li><li class="active-result" data-option-array-index="27" style="">530000</li><li class="active-result" data-option-array-index="28" style="">550000</li><li class="active-result" data-option-array-index="29" style="">570000</li><li class="active-result" data-option-array-index="30" style="">590000</li><li class="active-result" data-option-array-index="31" style="">610000</li><li class="active-result" data-option-array-index="32" style="">630000</li><li class="active-result" data-option-array-index="33" style="">650000</li><li class="active-result" data-option-array-index="34" style="">670000</li><li class="active-result" data-option-array-index="35" style="">690000</li><li class="active-result" data-option-array-index="36" style="">710000</li><li class="active-result" data-option-array-index="37" style="">730000</li><li class="active-result" data-option-array-index="38" style="">750000</li><li class="active-result" data-option-array-index="39" style="">770000</li><li class="active-result" data-option-array-index="40" style="">790000</li><li class="active-result" data-option-array-index="41" style="">810000</li><li class="active-result" data-option-array-index="42" style="">830000</li><li class="active-result" data-option-array-index="43" style="">850000</li><li class="active-result" data-option-array-index="44" style="">870000</li><li class="active-result" data-option-array-index="45" style="">890000</li><li class="active-result" data-option-array-index="46" style="">910000</li><li class="active-result" data-option-array-index="47" style="">930000</li><li class="active-result" data-option-array-index="48" style="">950000</li><li class="active-result" data-option-array-index="49" style="">970000</li><li class="active-result" data-option-array-index="50" style="">990000</li></ul></div></div>                                    </li>
-                                </ul>
-                            </div>
-                            <div class="select-categories">
-                                <ul>
-                                    <li>
-                                        <select onchange="wp_rem_property_content('5869');" class="chosen-select-no-single" name="price_maximum" style="display: none;"><option selected="selected" value="">Max Price</option><option value="10000">10000</option><option value="30000">30000</option><option value="50000">50000</option><option value="70000">70000</option><option value="90000">90000</option><option value="110000">110000</option><option value="130000">130000</option><option value="150000">150000</option><option value="170000">170000</option><option value="190000">190000</option><option value="210000">210000</option><option value="230000">230000</option><option value="250000">250000</option><option value="270000">270000</option><option value="290000">290000</option><option value="310000">310000</option><option value="330000">330000</option><option value="350000">350000</option><option value="370000">370000</option><option value="390000">390000</option><option value="410000">410000</option><option value="430000">430000</option><option value="450000">450000</option><option value="470000">470000</option><option value="490000">490000</option><option value="510000">510000</option><option value="530000">530000</option><option value="550000">550000</option><option value="570000">570000</option><option value="590000">590000</option><option value="610000">610000</option><option value="630000">630000</option><option value="650000">650000</option><option value="670000">670000</option><option value="690000">690000</option><option value="710000">710000</option><option value="730000">730000</option><option value="750000">750000</option><option value="770000">770000</option><option value="790000">790000</option><option value="810000">810000</option><option value="830000">830000</option><option value="850000">850000</option><option value="870000">870000</option><option value="890000">890000</option><option value="910000">910000</option><option value="930000">930000</option><option value="950000">950000</option><option value="970000">970000</option><option value="990000">990000</option></select><div class="chosen-container chosen-container-single" style="width: 100%;" title=""><a class="chosen-single" tabindex="-1"><span>Max Price</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+									<div class="field-holder select-dropdown  col-12 col-md-4 col-sm-4">
+										<div class="wp-rem-min-max-price">
+											<div class="select-categories"> 
+												<ul>
+													<li>
+														<select class="chosen-select-no-single" name="price_minimum" style="display: none;"><option selected="selected" value="">Min Price</option><option value="10000">10000</option><option value="30000">30000</option><option value="50000">50000</option><option value="70000">70000</option><option value="90000">90000</option><option value="110000">110000</option><option value="130000">130000</option><option value="150000">150000</option><option value="170000">170000</option><option value="190000">190000</option><option value="210000">210000</option><option value="230000">230000</option><option value="250000">250000</option><option value="270000">270000</option><option value="290000">290000</option><option value="310000">310000</option><option value="330000">330000</option><option value="350000">350000</option><option value="370000">370000</option><option value="390000">390000</option><option value="410000">410000</option><option value="430000">430000</option><option value="450000">450000</option><option value="470000">470000</option><option value="490000">490000</option><option value="510000">510000</option><option value="530000">530000</option><option value="550000">550000</option><option value="570000">570000</option><option value="590000">590000</option><option value="610000">610000</option><option value="630000">630000</option><option value="650000">650000</option><option value="670000">670000</option><option value="690000">690000</option><option value="710000">710000</option><option value="730000">730000</option><option value="750000">750000</option><option value="770000">770000</option><option value="790000">790000</option><option value="810000">810000</option><option value="830000">830000</option><option value="850000">850000</option><option value="870000">870000</option><option value="890000">890000</option><option value="910000">910000</option><option value="930000">930000</option><option value="950000">950000</option><option value="970000">970000</option><option value="990000">990000</option></select>
+													</li>
+												</ul>
+											</div>
+											<div class="select-categories">
+												<ul>
+													<li>
+														<select class="chosen-select-no-single" name="price_maximum" style="display: none;"><option selected="selected" value="">Max Price</option><option value="10000">10000</option><option value="30000">30000</option><option value="50000">50000</option><option value="70000">70000</option><option value="90000">90000</option><option value="110000">110000</option><option value="130000">130000</option><option value="150000">150000</option><option value="170000">170000</option><option value="190000">190000</option><option value="210000">210000</option><option value="230000">230000</option><option value="250000">250000</option><option value="270000">270000</option><option value="290000">290000</option><option value="310000">310000</option><option value="330000">330000</option><option value="350000">350000</option><option value="370000">370000</option><option value="390000">390000</option><option value="410000">410000</option><option value="430000">430000</option><option value="450000">450000</option><option value="470000">470000</option><option value="490000">490000</option><option value="510000">510000</option><option value="530000">530000</option><option value="550000">550000</option><option value="570000">570000</option><option value="590000">590000</option><option value="610000">610000</option><option value="630000">630000</option><option value="650000">650000</option><option value="670000">670000</option><option value="690000">690000</option><option value="710000">710000</option><option value="730000">730000</option><option value="750000">750000</option><option value="770000">770000</option><option value="790000">790000</option><option value="810000">810000</option><option value="830000">830000</option><option value="850000">850000</option><option value="870000">870000</option><option value="890000">890000</option><option value="910000">910000</option><option value="930000">930000</option><option value="950000">950000</option><option value="970000">970000</option><option value="990000">990000</option></select>
+													</li>
+												</ul>
+											</div>
+										</div>										
+									</div>
 									<input type="hidden" id="number-hidden1-min-beds" name="min-beds" value="1">
-									<div class="field-holder search-input select-categories has-icon">
+									<div class="field-holder search-input select-categories has-icon col-12 col-md-4 col-sm-4">
 										<ul class="minimum-loading-list">
 											<li>
 												<div class="spinner-btn input-group spinner"> <span><i class="fa fa-bed"></i></span>
@@ -296,7 +217,7 @@
 										</script>
 									</div>
 									<input type="hidden" id="number-hidden1-min-bath" name="min-bath" value="1">
-									<div class="field-holder search-input select-categories has-icon">
+									<div class="field-holder search-input select-categories has-icon col-12 col-md-4 col-sm-4">
 										<ul class="minimum-loading-list">
 											<li>
 												<div class="spinner-btn input-group spinner"> <span><i class="fa fa-bath"></i></span>
@@ -345,7 +266,7 @@
 										</script>
 									</div>
 									<input type="hidden" id="number-hidden1-min-garage" name="min-garage" value="1">
-									<div class="field-holder search-input select-categories has-icon">
+									<div class="field-holder search-input select-categories has-icon col-12 col-md-4 col-sm-4">
 										<ul class="minimum-loading-list">
 											<li>
 												<div class="spinner-btn input-group spinner"> <span><i class="fa fa-car"></i></span>
@@ -394,30 +315,37 @@
 										</script>
 									</div>
 									
-									<div class="field-holder field-range">
+									<div class="field-holder field-range sale col-12 col-md-4 col-sm-4">
 										<input type="hidden" id="range-hidden-area-ft" class="area-ft" name="area-ft" value="1000,50000">                            
 										<div class="price-per-person">
 											<span class="rang-text">SqFt&nbsp;1000 &nbsp; - &nbsp; 50000</span>
-											<div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 100%;"></div><div class="slider-track-high" style="right: 0px; width: 0%;"></div></div><div class="tooltip tooltip-main top" role="presentation" style="left: 50%; margin-left: -43px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">1000 : 50000</div></div><div class="tooltip tooltip-min top" role="presentation" style="left: 0%; margin-left: 0px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner">1000</div></div><div class="tooltip tooltip-max top" role="presentation" style="left: 100%; margin-left: 0px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner">50000</div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="1000" aria-valuemax="50000" aria-valuenow="1000" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round" role="slider" aria-valuemin="1000" aria-valuemax="50000" aria-valuenow="50000" tabindex="0" style="left: 100%;"></div></div><input type="text" id="ex16b133508area-ft" data-value="1000,50000" value="1000,50000" style="display: none;">  
+											<div class="slider slider-horizontal"></div><input type="text" id="area" data-value="1000,50000" value="1000,50000">  
 										</div>
 										<script type="text/javascript">
-											if (jQuery("#ex16b133508area-ft").length > 0) {
-												jQuery("#ex16b133508area-ft").slider({
+											if (jQuery("#area").length > 0) {
+												jQuery("#area").slider({
 													step : 1000,
 													min: 1000,
 													max: 50000,
 													value: [ 1000,50000],
 												});
-												jQuery("#ex16b133508area-ft").on("slideStop", function () {
-													var rang_slider_val = jQuery("#ex16b133508area-ft").val();
+												jQuery("#area").on("slideStop", function () {
+													var rang_slider_val = jQuery("#area").val();
 													jQuery("#range-hidden-area-ft").val(rang_slider_val);    
 												});
+												
 											}
-										</script>            
+											/* $('.slider').on('mouseenter','.slider-track,.slider-handle',function(){
+												$('.tooltip').css('opacity','1');
+											});
+											$('.slider').on('mouseleave','.slider-track,.slider-handle',function(){
+												$('.tooltip').css('opacity','0');
+											}); */
+										</script> 										
 									</div>
-									<div class="field-holder select-dropdown has-icon">
+									<div class="field-holder select-dropdown has-icon sale col-12 col-md-4 col-sm-4">
 										<label>
-											<i class="fa fa-calendar"></i>
+											<i class="fa fa-calendar-plus-o "></i>
 											<select class="chosen-select-no-single" id="tenure" name="tenure" >
 												<option selected="selected" value="">Tenure</option>
 												<option value="free-hold">Free hold</option>
@@ -427,7 +355,7 @@
 										</label>
 									</div>
 									
-									<div class="field-holder select-dropdown has-icon">
+									<div class="field-holder select-dropdown has-icon rent col-12 col-md-4 col-sm-4">
 										<label><i class="fa fa-star"></i>
 											<select class="chosen-select-no-single" id="property-furnished" name="property-furnished" >
 												<option selected="selected" value="">Property Furnished</option>
@@ -438,7 +366,7 @@
 											
 										</label>
 									</div>
-									<div class="field-holder select-dropdown has-icon">
+									<div class="field-holder select-dropdown has-icon rent col-12 col-md-4 col-sm-4">
 										<label><i class="fa fa-copy"></i>
 											<select class="chosen-select-no-single" id="tenants-type" name="tenants-type" >
 												<option selected="selected" value="">Tenants Type</option>
@@ -450,25 +378,27 @@
 											
 										</label>
 									</div>
-									<div class="cs-datepicker field-datepicker field-holder search-input">
+									<div class="cs-datepicker field-datepicker field-holder search-input rent col-12 col-md-4 col-sm-4">
 										<label id="Deadline" class="cs-calendar-from"> <i class="fa fa-calendar"></i>
-											<input type="text" placeholder="From Date Available" name="fromdate-available "> </label></div><div class="cs-datepicker field-datepicker field-holder search-input "> <label id="Deadline " class="cs-calendar-to "> <i class="fa fa-calendar"></i> <input type="text " placeholder="To Date Available " name="todate-available"> </label>
+											<input type="text" placeholder="From Date Available" class="dtfld" name="fromdate-available "> 
+										</label>
+									</div>
+									<div class="cs-datepicker field-datepicker field-holder search-input rent col-12 col-md-4 col-sm-4"> 
+										<label id="Deadline " class="cs-calendar-to "> <i class="fa fa-calendar"></i> 
+											<input type="text" placeholder="To Date Available " class="dtfld" name="todate-available"> 
+										</label>
 									</div>
 									<script type="text/javascript">
-										if (jQuery(".cs-calendar-from input").length != "") {
-											jQuery(".cs-calendar-from input").datetimepicker({
-												timepicker: false,
-												format: "Y/m/d",
-												scrollInput: false
-											});
-										}
-										if (jQuery(".cs-calendar-to input").length != "") {
-											jQuery(".cs-calendar-to input").datetimepicker({
-												timepicker: false,
-												format: "Y/m/d",
-												scrollInput: false
-											});
-										}
+										var date = new Date();			
+										date.setDate(date.getDate());
+										$('.dtfld').datepicker({
+											keyboardNavigation: false,
+											forceParse: false,
+											calendarWeeks: false,											
+											format: 'dd-mm-yyyy',	
+											//step: 5,
+											autoclose: true
+										}); 
 									</script>
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 features-list"> <strong class="advance-trigger">Other Features</strong>
 										<div class="clearfix"></div>
@@ -1808,205 +1738,5 @@
                 </div>
             </div>
         </section>
-        <footer id="footer">
-            <div class="company-logo-holder">
-                <div class="company-logo">
-                    <ul>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner03.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner05.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner04.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner06.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner08.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner09.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner10.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner11.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner12.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="#"><img src="images/partner02.png" alt="" title=""></a>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright-sec">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="row">
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                                    <div class="footer-nav">
-                                        <ul id="menu-footer-menu" class="menu">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Members</a></li>
-                                            <li><a href="#">Faqs</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                    <div class="footer-social-media">
-                                        <ul class="">
-                                            <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-google"></i></a></li>
-                                            <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-vimeo"></i></a></li>
-                                            <li><a href="#" class="colrhover" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-12">
-                            <div class="copy-right">
-                                <p> © 2019 estateguru. All Rights Reserved.<a href="#"> azillesoft</a></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-12">
-                            <div class="widget widget-app">
-                                <a href="#"><img src="images/app-image1.png" alt=""></a>
-                                <a href="#"><img src="images/app-image2.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
-    var navbar = document.getElementById("tmenu");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("fixed-top")
-        } else {
-            navbar.classList.remove("fixed-top");
-        }
-    }
-    $(function() {
-        if ($(".testimonial-slider .swiper-container").length != '') {
-            var swiper = new Swiper('.testimonial-slider .swiper-container', {
-                nextButton: '.testimonial-slider .swiper-button-next',
-                prevButton: '.testimonial-slider .swiper-button-prev',
-                slidesPerView: 'auto',
-                autoplay: 2500,
-                centeredSlides: true,
-                paginationClickable: true,
-                spaceBetween: 30,
-                loop: true,
-                breakpoints: {
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                    },
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    480: {
-                        slidesPerView: 1,
-                    }
-                }
-            });
-        }
-    });
-</script>
-<script type="text/javascript">
-                      
-function chosen_selectionbox() {
-    if ($(".chosen-select, .chosen-select-deselect, .chosen-select-no-single, .chosen-select-no-results, .chosen-select-width").length != "") {
-        var config = {
-            ".chosen-select": {
-                width: "100%"
-            },
-            ".chosen-select-deselect": {
-                allow_single_deselect: true
-            },
-            ".chosen-select-no-single": {
-                disable_search_threshold: 10,
-                width: "100%"
-            },
-            ".chosen-select-no-results": {
-                no_results_text: "Oops, nothing found!"
-
-            },
-            ".chosen-select-width": {
-                width: "95%"
-            }
-        };
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
-    }
-}
-// Chosen touch support.
-if ($('.chosen-container').length > 0) {
-    $('.chosen-container').on('touchstart', function (e) {
-        // e.stopPropagation();
-        // e.preventDefault();
-        // Trigger the mousedown event.
-        $(this).trigger('mousedown');
-    });
-}
-
-
-$(document).on('click', '.chosen-container', function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    $(".search-btn").toggleClass('disable-search');
-    $(".advanced-btn").toggleClass('disable-search');
-});
-$(document).click(function (e) {
-    if ($(".disable-search").length > 0) {
-        $(".disable-search").removeClass("disable-search");
-    }
-});
-
-                    </script>
-
-</html>
+<?php include 'footer.php';?>
+	   
